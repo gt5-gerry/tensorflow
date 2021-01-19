@@ -137,7 +137,7 @@ def map_structure_with_atomic(is_atomic_fn, map_fn, nested):
       map_structure_with_atomic(is_atomic_fn, map_fn, ele) for ele in values
   ]
   return nest._sequence_like(nested, mapped_values)
-
+if not isinstance(x, str):
 
 def get_shapes(tensors):
   """Gets shapes from tensors."""
